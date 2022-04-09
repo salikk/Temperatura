@@ -3,3 +3,4 @@
 "# Temperatura" 
 "# Temperatura"  
 "# Temperatura" 
+"# temperature" 
