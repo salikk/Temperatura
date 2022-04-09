@@ -21,6 +21,8 @@ import java.util.regex.Pattern;
 public class Main {
     public static void main(String[] args) throws IOException, InterruptedException {
         Parser parser = new Parser();
+        parser.updateData();
         System.out.println(parser.getArrayData());
+//        System.out.println(Parser.readPageFromUrl("http://172.20.10.9/?m=1"));
     }
 }

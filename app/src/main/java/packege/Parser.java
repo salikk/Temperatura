@@ -16,18 +16,18 @@ public class Parser {
     public static final String PATTERN = "\\{m}[\\d,.]{1,4}";
     private ArrayList<String> arrayData;
     private String htmlCode;
-    private final String url = ("http://172.20.10.9/?m=1");
+    private final String url = ("http://192.168.209.111/?m=1");
 
 
     public Parser() {
-        try {
-            this.htmlCode = readPageFromUrl(this.url);
-                    // readPageFromUrl(this.url);
-                    //"{t}{s}SI7021 Температура{m}28,9 °C{e}{s}SI7021 Влажность{m}30,5 %{e}{s}SI7021 Dew point{m}9,8 °C{e}</table>{t}<tr><td style='width:100%;text-align:center;font-weight:normal;font-size:62px'>OFF</td></tr><tr></tr></table>\n";
-            this.updateData();
-        } catch (IOException | InterruptedException e) {
-            e.printStackTrace();
-        }
+//        try {
+//            this.htmlCode = readPageFromUrl(this.url);
+//                     readPageFromUrl(this.url);
+//                    "{t}{s}SI7021 Температура{m}28,9 °C{e}{s}SI7021 Влажность{m}30,5 %{e}{s}SI7021 Dew point{m}9,8 °C{e}</table>{t}<tr><td style='width:100%;text-align:center;font-weight:normal;font-size:62px'>OFF</td></tr><tr></tr></table>\n";
+//            this.updateData();
+//        } catch (IOException | InterruptedException e) {
+//            e.printStackTrace();
+//        }
     }
 
     public void updateData() throws IOException, InterruptedException {
